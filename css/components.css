@@ -36,7 +36,13 @@
   .app-navbar {
     height: 64px;
   }
-.nav-buttons { position: absolute; left: 0; top: 50%; transform: translateY(-50%); } .navbar-brand { margin: 0 auto; }
+  .nav-buttons {
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  } 
+  .navbar-brand { margin: 0 auto; }
   .app-navbar h1 {
     font-size: 1.6rem;
     text-align: right;
@@ -45,8 +51,7 @@
   /* Lock button sizes so BG text can't push layout */
   #langSwitcher,
   #themeSwitcher {
-    
-    padding: 0.55rem 0.7rem;
+    padding: 0.35rem 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
