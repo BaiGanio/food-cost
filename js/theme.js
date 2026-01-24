@@ -1,19 +1,50 @@
+const THEMES = ["light", "dark", "cosmic", "cosmic-retro"];
+const saved = localStorage.getItem("theme") || "dark";
+
+function applyTheme(theme) {
+  const body = document.body;
+
+  // Remove all theme classes
+  THEMES.forEach(t => body.classList.remove(t));
+
+  // Add the selected theme
+  body.classList.add(theme);
+
+  // Save
+  localStorage.setItem("theme", theme);
+
+  // Update button text
+  updateThemeButton(theme);
+}
+
 function toggleTheme() {
-  const html = document.documentElement;
-  const next = html.dataset.theme === "light" ? "dark" : "light";
-  html.dataset.theme = next;
-  localStorage.setItem("theme", next);
-  updateThemeButton();
+  const current = localStorage.getItem("theme") || "light";
+  const index = THEMES.indexOf(current);
+  const next = THEMES[(index + 1) % THEMES.length];
+  applyTheme(next);
+}
+
+function updateThemeButton(theme) {
+  const btn = document.getElementById("themeSwitcher");
+  if (!btn) return;
+
+  const labels = {
+    light: "🌞 Light",
+    dark: "🌙 Dark",
+    cosmic: "🪐 Cosmic",
+    "cosmic-retro": "🌈 Retro"
+  };
+
+  btn.textContent = labels[theme] || "Theme";
 }
 
 function loadTheme() {
-  const saved = localStorage.getItem("theme") || "light";
-  document.documentElement.dataset.theme = saved;
-  updateThemeButton();
+  applyTheme(saved);
 }
 
-function updateThemeButton() { 
-  const btn = document.getElementById("themeSwitcher"); 
-  const current = document.documentElement.dataset.theme; 
-  if (btn) { btn.textContent = current === "light" ? "🌗 light" : "🌗 dark"; } 
-}
+window.addEventListener("DOMContentLoaded", () => {
+  loadTheme();
+
+  const btn = document.getElementById("themeSwitcher");
+  if (btn) btn.addEventListener("click", toggleTheme);
+});

@@ -13,16 +13,6 @@
     --font-primary: 'Amatic SC', sans-serif; 
     --font-body: 'Cormorant Garamond', serif;
 
-    /* Colors (Default Dark Theme)*/
-    --color-bg: #0b0e1a;
-    --color-bg-soft: #111423;
-    --color-text: #e6e6e6;
-    --color-text-soft: #bfc3d9;
-
-    --color-accent: #6495ed; /* cornflowerblue */
-    --color-accent-soft: rgba(100,149,237,0.2);
-    --color-accent-strong: rgba(100,149,237,0.5);
-
     --color-danger: #ff4d4d;
     --color-success: #4dff88;
     --color-warning: #ffd24d;
@@ -51,9 +41,35 @@
     --transition-med: 0.25s ease;
 }
 
+/* BASE RESET + BODY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+}
+
 /* -------------------------------------------------------
                         THEMES
 ------------------------------------------------------- */
+body.dark {
+    --color-bg: #0b0e1a;
+    --color-bg-soft: #111423;
+    --color-text: #e6e6e6;
+    --color-text-soft: #bfc3d9;
+
+    --color-accent: #6495ed;
+    --color-accent-soft: rgba(100,149,237,0.2);
+    --color-accent-strong: rgba(100,149,237,0.5);
+}
 /* Light Theme */ 
 body.light { 
     --color-bg: #ffffff; 
@@ -84,43 +100,9 @@ body.cosmic-retro {
     --color-accent-soft: rgba(45, 226, 230, 0.2);
     --color-accent-strong: rgba(246, 1, 157, 0.6); /* Hot Pink Glow */
 }
-body.cosmic-nebula {
-    --color-bg: #0b1f3a;           /* Champagne Supernova Dark */
-    --color-bg-soft: #1b263b;      /* Deep Navy */
-    --color-text: #e0f2f1;         /* Starlight Mint */
-    --color-text-soft: #9aeadd;     /* Galactic Green */
-    --color-accent: #7cfebd;       /* Soft Aurora Green */
-    --color-accent-soft: rgba(124, 254, 189, 0.15);
-    --color-accent-strong: #df8bfe; /* Lavender Flare */
-}
-body.cosmic-flare {
-    --color-bg: #1c1c1c;           /* Dark Matter */
-    --color-bg-soft: #2d2d2d;      /* Lunar Charcoal */
-    --color-text: #f9f9f9;         /* Off-white */
-    --color-text-soft: #ffb74d;     /* Solar Gold */
-    --color-accent: #f46036;       /* Martian Orange */
-    --color-accent-soft: rgba(244, 96, 54, 0.2);
-    --color-accent-strong: #d72638; /* Fiery Red */
-}
 /* -------------------------------------------------------
                        END THEMES
 ------------------------------------------------------- */
-
-/* BASE RESET + BODY */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: var(--color-bg);
-    color: var(--color-text);
-    font-family: var(--font-body);
-    line-height: 1.6;
-    padding-bottom: 10px;
-    overflow-x: hidden;
-}
 
 /* -------------------------------------------------------
                       TYPOGRAPHY
@@ -130,13 +112,13 @@ h1 {
     font-family: var(--font-primary);
     font-weight: 900;
     margin-bottom: var(--space-3);
-    /* color: var(--color-text); */
+    color: var(--color-text);
 }
 h2, h3, h4, h5, h6 {
     font-family: var(--font-body);
     font-weight: 700;
     margin-bottom: var(--space-3);
-    /* color: var(--color-text); */
+    color: var(--color-text);
 }
 h1, h2{
   text-align: center;
@@ -165,6 +147,7 @@ small {
 }
 label{
     font-family: var(--font-primary);
+        color: var(--color-text);
 }
 /* -------------------------------------------------------
                       END TYPOGRAPHY
@@ -192,103 +175,5 @@ label{
 .mt-5 { margin-top: var(--space-5); }
 /* -------------------------------------------------------
                       END LAYOUT UTILITIES
-------------------------------------------------------- */
-/* -------------------------------------------------------
-                      COMPONENTS
-------------------------------------------------------- */
-/* COMPONENTS — buttons, inputs, cards, modals */
-
-
-.modal-content {
-    background: var(--color-bg-soft);
-    border: 2px solid var(--color-accent);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-strong);
-}
-
-.image-modal .modal-content {
-    background: black; /* или твоя cosmic/dark стил */
-    color: white;
-}
-
-.image-modal img {
-    max-width: 100%;
-    border-radius: var(--radius-lg);
-}
-
-.terms-modal .modal-content {
-    background: var(--color-bg-soft) !important;
-    color: var(--color-text) !important;
-    font-size: 1.15rem;
-}
-
-.terms-modal .modal-header,
-.terms-modal .modal-footer {
-    border-color: var(--color-accent-soft) !important;
-}
-
-/* -------------------------------------------------------
-                      END COMPONENTS
-------------------------------------------------------- */
-/* -------------------------------------------------------
-                      SEARCH + FILTER
-------------------------------------------------------- */
-.filter-item {
-    padding: 6px 14px;
-    border-radius: var(--radius-md);
-    border: 2px solid var(--color-accent-soft);
-    transition: var(--transition-med);
-    cursor: pointer;
-}
-
-.filter-item:hover {
-    background: var(--color-accent-soft);
-    box-shadow: var(--shadow-soft);
-    transform: translateY(-2px);
-}
-
-.filter-item:has(.form-check-input:checked) {
-    background: var(--color-accent-soft);
-    border-color: var(--color-accent);
-    box-shadow: var(--shadow-strong);
-}
-/* -------------------------------------------------------
-                    END SEARCH + FILTER
-------------------------------------------------------- */
-/* -------------------------------------------------------
-                START LOGIN/REGISTER LOADING
-------------------------------------------------------- */
-/* Base animation container */
-.auth-animate {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: authFadeIn 0.4s ease-out forwards;
-}
-
-/* Dark theme */
-body.dark .auth-animate {
-  animation: authFadeInDark 0.45s ease-out forwards;
-}
-
-/* Black theme */
-body.black .auth-animate {
-  animation: authFadeInBlack 0.45s ease-out forwards;
-}
-.auth-animate button[type="submit"]:hover { animation: pulseGlow 0.6s ease-out; } @keyframes pulseGlow { 0% { box-shadow: 0 0 0 rgba(255,255,255,0.0); } 50% { box-shadow: 0 0 12px rgba(255,255,255,0.25); } 100% { box-shadow: 0 0 0 rgba(255,255,255,0.0); } }
-
-/* Keyframes */
-@keyframes authFadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
-@keyframes authFadeInDark {
-  from { opacity: 0; transform: translateY(25px); filter: brightness(0.7); }
-  to   { opacity: 1; transform: translateY(0); filter: brightness(1); }
-}
-
-@keyframes authFadeInBlack {
-  from { opacity: 0; transform: translateY(30px) scale(0.98); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-/* -------------------------------------------------------
-                END LOGIN/REGISTER LOADING
 ------------------------------------------------------- */
 
