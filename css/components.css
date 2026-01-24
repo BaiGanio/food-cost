@@ -18,44 +18,24 @@
 }
 
 /* Title on the right */
-.app-navbar h1 {
+/* .app-navbar h1 {
   font-size: 1.8rem;
   margin: 0;
   white-space: nowrap;
-}
+} */
 
 /* Buttons stay fixed size */
-.app-navbar .btn {
+/* .app-navbar .btn {
   font-size: 1.2rem;
   white-space: nowrap;
   font-weight: 900;
-}
+} */
 
 /* Mobile adjustments */
 @media (max-width: 480px) {
-  .app-navbar {
+  /* .app-navbar {
     height: 64px;
-  }
-  .nav-buttons {
-    position: absolute; 
-    left: 0; 
-    top: 50%; 
-    transform: translateY(-50%); 
-  } 
-  .navbar-brand { margin: 0 auto; }
-  .app-navbar h1 {
-    font-size: 1.6rem;
-    text-align: right;
-  }
-
-  /* Lock button sizes so BG text can't push layout */
-  #langSwitcher,
-  #themeSwitcher {
-    padding: 0.35rem 0.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  } */
 }
 
 /* -------------------------------------------------------
