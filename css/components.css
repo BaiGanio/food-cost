@@ -1,0 +1,71 @@
+
+/* -------------------------------------------------------
+                      COMPONENTS
+------------------------------------------------------- */
+/* COMPONENTS — buttons, inputs, cards, modals */
+/* -------------------------------------------------------
+                      COMPONENTS - BUTTONS
+------------------------------------------------------- */
+.btn-primary {
+    background: var(--color-accent);
+    border: none;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    color: var(--color-bg);
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: var(--transition-med);
+    font-size: 1.4rem;
+}
+
+.btn-primary:hover {
+    background: #7aa7ff;
+    box-shadow: var(--shadow-soft);
+}
+
+.btn-accent {
+  background: #7aa7ff;
+  color: #fff;
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 6px;
+  transition: opacity var(--transition);
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+}
+
+.btn-accent:hover {
+  background: var(--accent);
+  box-shadow: var(--shadow-soft);
+  color: #fff;
+}
+/* -------------------------------------------------------
+                    END COMPONENTS - BUTTONS
+------------------------------------------------------- */
+/* -------------------------------------------------------
+                      COMPONENTS - CARDS
+------------------------------------------------------- */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: var(--space-3);
+  margin-bottom: var(--space-3);
+  transition: background var(--transition), border var(--transition);
+}
+/* .card {
+    background: var(--color-bg-soft);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-accent-soft);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-med);
+} */
+
+.card:hover {
+    border-color: var(--color-accent);
+    /* box-shadow: var(--shadow-strong); */
+}
+/* -------------------------------------------------------
+                    END  COMPONENTS - CARDS
+------------------------------------------------------- */
