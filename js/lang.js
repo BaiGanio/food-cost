@@ -16,7 +16,7 @@ const LANG = {
     developed: "Developed by Lyuben Kikov - all rights reserved ;/",
     reset: "reset",
 
-    // table
+    
     group: "Group",
     dailyCalories: "Daily Calories",
     watts: "Watts",
@@ -53,7 +53,8 @@ const LANG = {
     developed: "разработено от Любен Киков - всички права запазени ;/",
     reset: "изчисти",
 
-    // table
+    
+    
     group: "Група",
     dailyCalories: "Дневни калории",
     watts: "Ватове",
