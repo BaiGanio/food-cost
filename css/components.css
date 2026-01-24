@@ -36,7 +36,7 @@
   .app-navbar {
     height: 64px;
   }
-
+.nav-buttons { position: absolute; left: 0; top: 50%; transform: translateY(-50%); } .navbar-brand { margin: 0 auto; }
   .app-navbar h1 {
     font-size: 1.6rem;
     text-align: right;
