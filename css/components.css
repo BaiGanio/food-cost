@@ -6,30 +6,51 @@
 /* -------------------------------------------------------
                       COMPONENTS - NAVBAR
 ------------------------------------------------------- */
+/* Base navbar styling */
 .app-navbar {
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-accent-soft);
-  color: var(--color-text);
   position: sticky;
   top: 0;
   z-index: 1000;
+  height: 60px; /* consistent height */
+  display: flex;
+  align-items: center;
 }
 
-/* Brand text */
-.app-navbar .navbar-brand {
-  color: var(--color-text) !important;
+/* Title */
+.app-navbar h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  white-space: nowrap;
 }
 
-/* Buttons inside navbar */
-.app-navbar .btn-outline-primary {
-  border-color: var(--color-accent);
-  color: var(--color-text);
+/* Buttons */
+.app-navbar .btn {
+  padding: 0.35rem 0.6rem;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  font-weight: 900;
 }
 
-.app-navbar .btn-outline-primary:hover {
-  background: var(--color-accent);
-  color: var(--color-bg);
+/* Make the right side compact */
+.app-navbar .d-flex.gap-2 {
+  gap: 0.4rem !important;
 }
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .app-navbar {
+    height: 54px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .app-navbar h1 {
+    font-size: 1.8rem;
+  }
+}
+
 
 /* Icon button (theme switcher) */
 #themeSwitcher {
@@ -99,7 +120,6 @@
 .card {
     background: var(--color-bg-soft);
     padding: var(--space-4);
-    /* border-radius: var(--radius-lg); */
     border: 1px solid var(--color-accent-soft);
     box-shadow: var(--shadow-soft);
     transition: var(--transition-med);
