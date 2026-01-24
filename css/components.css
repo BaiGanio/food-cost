@@ -35,7 +35,7 @@
 @media (max-width: 480px) {
   .app-navbar h1 {
     font-size: 1.6rem;
-    /* text-align: right; */
+   display: none;
   }
   .app-navbar .btn {
     font-size: 0.8rem;
