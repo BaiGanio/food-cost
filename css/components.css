@@ -163,9 +163,11 @@ table td {
 }
 
 table th {
-  background: var(--color-bg);
+  background: var(--color-bg-soft);
   color: var(--color-text);
-  font-weight: 700;
+  font-weight: 500;
+  /* font-family: var(--font-primary); */
+  font-size: 1.4rem;
 }
 
 table tr:nth-child(even) {
