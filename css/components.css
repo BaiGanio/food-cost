@@ -186,7 +186,7 @@ table tr:nth-child(odd) {
 }
 @media (max-width: 576px) {
   .flip-card {
-    min-height: 620px;
+    min-height: 540px;
   }
 }
 .flip-card-inner {
