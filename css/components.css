@@ -49,11 +49,6 @@
   .app-navbar h1 {
     font-size: 1.8rem;
   }
-  .app-navbar .btn { 
-    /* padding: 0.3rem 0.5rem;  */
-    font-size: 0.8rem; 
-    min-width: 50px; 
-  }
 }
 
 
@@ -68,6 +63,27 @@
   background: var(--color-accent);
   color: var(--color-bg);
 }
+/* Desktop: normal */
+#langSwitcher,
+#themeSwitcher {
+  white-space: nowrap;
+  font-size: 1.3rem; 
+}
+
+/* Mobile: lock button sizes */
+@media (max-width: 480px) {
+  #langSwitcher,
+  #themeSwitcher {
+    width: 68px;          /* fixed width */
+    padding: 0;           /* compact */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;    /* icon size */
+    overflow: hidden;     /* hide long text */
+  }
+}
+
 
 /* -------------------------------------------------------
                     END  COMPONENTS - NAVBAR
