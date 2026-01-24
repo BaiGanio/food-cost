@@ -15,7 +15,7 @@
     font-family: var(--font-primary);
     cursor: pointer;
     transition: var(--transition-med);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .btn-primary:hover {
@@ -68,4 +68,25 @@
 }
 /* -------------------------------------------------------
                     END  COMPONENTS - CARDS
+------------------------------------------------------- */
+/* -------------------------------------------------------
+                    COMPONENTS - INPUT FIELD
+------------------------------------------------------- */
+.input-field {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-accent-soft);
+    background: var(--color-bg-soft);
+    color: var(--color-text);
+    transition: var(--transition-fast);
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-soft);
+}
+/* -------------------------------------------------------
+                  END  COMPONENTS - INPUT FIELD
 ------------------------------------------------------- */
