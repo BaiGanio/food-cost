@@ -34,8 +34,8 @@
 /* MOBILE LAYOUT */
 @media (max-width: 480px) {
   .app-navbar h1 {
-    /* font-size: 1.6rem; */
-   display: none;
+    font-size: 1.6rem;
+   /* display: none; */
   }
   .app-navbar .btn {
     font-size: 0.8rem;
