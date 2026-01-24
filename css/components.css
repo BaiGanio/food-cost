@@ -49,6 +49,9 @@
   .app-navbar h1 {
     font-size: 1.8rem;
   }
+  .app-navbar .btn {
+    font-size: 0.8rem;
+  }
 }
 
 
