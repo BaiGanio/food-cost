@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+  loadTheme();
+});
+
 const THEMES = ["light", "dark", "cosmic", "cosmic-retro"];
 const saved = localStorage.getItem("theme") || "dark";
 

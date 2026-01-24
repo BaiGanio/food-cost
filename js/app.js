@@ -1,3 +1,6 @@
-window.addEventListener("load", () => {
-  loadTheme();
-});
+
+
+
+function flipCard() {
+  document.querySelector('.flip-card').classList.toggle('flipped');
+}

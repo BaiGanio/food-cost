@@ -147,7 +147,12 @@ small {
 }
 label{
     font-family: var(--font-primary);
-        color: var(--color-text);
+    color: var(--color-text);
+}
+footer{
+    h5, h6{
+        font-family: var(--font-primary);
+    }
 }
 /* -------------------------------------------------------
                       END TYPOGRAPHY
@@ -176,4 +181,8 @@ label{
 /* -------------------------------------------------------
                       END LAYOUT UTILITIES
 ------------------------------------------------------- */
+#resultCard {
+  transition: opacity 0.3s ease;
+}
+
 

@@ -11,11 +11,15 @@ const LANG = {
     language: "Language",
     years: "Years",
     weight: "Weight (kg)",
-    chart: "Chart"
+    chart: "Chart",
+    footer:"Food Cost © 2026",
+    developed:"Developed by Lyuben Kikov - all rights reserved ;/",
+    reset:"reset"
+
   },
 
   bg: {
-    app: "Цена на Храната",
+    app: "Цената на Храната",
     welcome: "Добре дошли в Цената на Храната",
     tagline: "Изчислете бързо и лесно реалната сумата, която сте платили за изхранване.",
     start: "изчисли",
@@ -26,6 +30,9 @@ const LANG = {
     language: "Език",
     years: "Години",
     weight: "Тегло (кг)",
-    chart: "диаграма"
+    chart: "диаграма",
+    footer:"Цената на Храната © 2026",
+    developed:"разработено от Любен Киков - всички права запазени ;/",
+    reset:"изчисти"
   }
 };

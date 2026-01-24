@@ -31,14 +31,14 @@
         <button id="themeSwitcher" class="btn btn-primary"></button>
     </div>
   </header>
-  <hr>
   <!-- MAIN SECTIONS -->
   <main class="container py-4">
-    <div class="row justify-content-center">
-        <h1 data-lang="welcome" style="font-size: 3.6rem;"></h1>
-        <h2 data-lang="tagline"></h2>
-      <div class="col-12 col-md-2">
 
+  <hr>
+    <div class="row justify-content-center">
+      <h1 data-lang="welcome" style="font-size: 3.6rem;"></h1>
+      <h2 data-lang="tagline"></h2>
+      <div class="col-12 col-md-2">
             <div class="card p-4 text-center"> 
               <!-- <h3 class="mb-4 text-center" style="font-weight: 700; font-size: 2rem;"> Food Cost Calculator </h3>  -->
               <form onsubmit="event.preventDefault(); calculate();"> 
@@ -59,31 +59,76 @@
                     data-lang="start"
                     class="btn btn-primary w-100"
                     type="submit" 
-                    id="calculateBtn"
-                    disabled>
+                    id="calculateBtn">
                   </button>
               </form> 
             </div> 
-
       </div>
       <div class="col-12 col-md-8">
-          <div class="card p-4">
-              <h1 data-lang="theBill" class="mb-3" style="text-align: left;"></h1>
-              <h6>- Estimation over the provided years. Daily consumption on average is 123456 kal</х>
+        <div class="flip-card"> 
+          <div class="flip-card-inner" id="flipCard">
+            <!-- FRONT -->
+            <div class="flip-card-front card p-4" id="resultCard">
+                <h1 data-lang="theBill" class="mb-3" style="text-align: left;"></h1>
+                <p>1 kcal = 4184 J ≈ 0.0484259 W</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Group</th>
+                      <th>Recommended Daily Calories</th>
+                      <th>Equivalent in Watts (W)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Adult Women</td>
+                      <td>1 600 – 2 400 kcal</td>
+                      <td>77 – 116 W</td>
+                    </tr>
+                    <tr>
+                      <td>Adult Men</td>
+                      <td>2 200 – 3 000+ kcal</td>
+                      <td>106 – 145+ W</td>
+                    </tr>
+                    <tr>
+                      <td>Children (2–18)</td>
+                      <td>1 000 – 3 200 kcal</td>
+                      <td>48 – 155 W</td>
+                    </tr>
+                    <tr>
+                      <td>Average for all</td>
+                      <td>2 200 kcal</td>
+                      <td>106 W</td>
+                    </tr>
+                      <tr>
+                      <td colspan="3" style="text-align:center;">
+                        Check also U.S. Department of Agriculture <a href="https://www.nal.usda.gov/human-nutrition-and-food-safety/dri-calculator">DRI Calculator</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="flip-btn" onclick="flipCard()">Flip</button>
+            </div>
+            <!-- BACK --> 
+            <div class="flip-card-back card p-4">
+              <h2>Additional Info</h2>
+              <p>You can place formulas, notes, or anything else here.</p> <button class="flip-btn"
+                onclick="flipCard()">Back</button>
+            </div>
           </div>
+        </div>
       </div>
-    </div>
-
-  </main>
-
-  <hr>
-
+    </div> 
+    <hr>
   <!-- FOOTER -->
   <footer class="text-center text-muted">
-   <h1> Food Cost © 2026</h1>
-   <h5>Developed by L.K.</h5>
-   <h6>All rights reserved.</h6>
+   <h1 data-lang="footer"></h1>
+   <h5 data-lang="developed"></h5>
+   <h6 data-lang="rights"></h6>
   </footer>
+
+  </main>
+ 
 
   <!-- JS -->
   <script src="js/theme.js"></script>
@@ -91,6 +136,7 @@
   <script src="js/app.js"></script>
   <script src="js/lang.js"></script>
   <script src="js/language.js"></script>
+  <script src="js/calculation.js"></script>
 
 </body>
 </html>

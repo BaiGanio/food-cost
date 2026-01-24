@@ -1,3 +1,5 @@
+let CURRENT_LANG = "en";
+
 function applyLanguage(lang) {
   const elements = document.querySelectorAll("[data-lang]");
   elements.forEach(el => {
@@ -9,14 +11,13 @@ function applyLanguage(lang) {
 }
 
 function setLanguage(lang) {
-  localStorage.setItem("lang", lang);
-  applyLanguage(lang);
+  CURRENT_LANG = lang; localStorage.setItem("lang", lang); applyLanguage(lang);;
 }
 
 function loadLanguage() {
-  const saved = localStorage.getItem("lang") || "en";
-  applyLanguage(saved);
-  return saved;
+  CURRENT_LANG = localStorage.getItem("lang") || "en"; 
+  applyLanguage(CURRENT_LANG); 
+  return CURRENT_LANG;  
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -25,9 +26,8 @@ window.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("langSwitcher");
   if (btn) {
     btn.addEventListener("click", () => {
-      const next = current === "en" ? "bg" : "en";
+      const next = CURRENT_LANG === "en" ? "bg" : "en";
       setLanguage(next);
-      location.reload(); // refresh UI text
     });
   }
 });
