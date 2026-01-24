@@ -4,6 +4,49 @@
 ------------------------------------------------------- */
 /* COMPONENTS — buttons, inputs, cards, modals */
 /* -------------------------------------------------------
+                      COMPONENTS - NAVBAR
+------------------------------------------------------- */
+.app-navbar {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-accent-soft);
+  color: var(--color-text);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Brand text */
+.app-navbar .navbar-brand {
+  color: var(--color-text) !important;
+}
+
+/* Buttons inside navbar */
+.app-navbar .btn-outline-primary {
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.app-navbar .btn-outline-primary:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Icon button (theme switcher) */
+#themeSwitcher {
+  background: var(--color-bg);
+  border: 1px solid var(--color-accent);
+  color: var(--color-text);
+}
+
+#themeSwitcher:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* -------------------------------------------------------
+                    END  COMPONENTS - NAVBAR
+------------------------------------------------------- */
+/* -------------------------------------------------------
                       COMPONENTS - BUTTONS
 ------------------------------------------------------- */
 .btn-primary {
@@ -56,7 +99,7 @@
 .card {
     background: var(--color-bg-soft);
     padding: var(--space-4);
-    border-radius: var(--radius-lg);
+    /* border-radius: var(--radius-lg); */
     border: 1px solid var(--color-accent-soft);
     box-shadow: var(--shadow-soft);
     transition: var(--transition-med);
@@ -126,15 +169,21 @@ table tr:nth-child(odd) {
 ------------------------------------------------------- */
 .flip-card {
   width: 100%;
+  height: 100%; 
   perspective: 1000px;
   position: relative;
 }
-
+@media (max-width: 576px) {
+  .flip-card {
+    min-height: 620px;
+  }
+}
 .flip-card-inner {
   width: 100%;
-  transition: transform 0.6s var(--transition-med);
+  height: 100%;
+  transition: transform 0.6s ease;
   transform-style: preserve-3d;
-  position: relative;
+  /* box-shadow: -1px 5px 15px 0px rgba(0,0,0,0.8); */
 }
 
 .flip-card.flipped .flip-card-inner {
@@ -143,15 +192,20 @@ table tr:nth-child(odd) {
 
 .flip-card-front,
 .flip-card-back {
-  backface-visibility: hidden;
   position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  overflow-y: auto; /* prevents content from pushing card height */
 }
-
 .flip-card-back {
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20px;
 }
 
 /* Bottom-right button */

@@ -57,6 +57,7 @@ function calculate() {
     document.getElementById("calculateBtn").setAttribute("data-lang", "reset"); 
     applyLanguage(CURRENT_LANG);
     document.getElementById("calculateBtn").onclick = resetCalculator;
+    
 }
 
 
