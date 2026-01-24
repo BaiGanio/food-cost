@@ -12,10 +12,28 @@ const LANG = {
     years: "Years",
     weight: "Weight (kg)",
     chart: "Chart",
-    footer:"Food Cost © 2026",
-    developed:"Developed by Lyuben Kikov - all rights reserved ;/",
-    reset:"reset"
+    footer: "Food Cost © 2026",
+    developed: "Developed by Lyuben Kikov - all rights reserved ;/",
+    reset: "reset",
 
+    // table
+    group: "Group",
+    dailyCalories: "Daily Calories",
+    watts: "Watts",
+    women: "Women",
+    men: "Men",
+    children: "Children (2–18)",
+    average: "Average",
+    kcalWomen: "1600 – 2400 kcal",
+    kcalMen: "2200 – 3000+ kcal",
+    kcalChildren: "1000 – 3200 kcal",
+    kcalAverage: "2600 kcal",
+    wWomen: "77 – 116 W",
+    wMen: "106 – 145+ W",
+    wChildren: "48 – 155 W",
+    wAverage: "126 W",
+    flip: "flip",
+    back: "back"
   },
 
   bg: {
@@ -31,8 +49,27 @@ const LANG = {
     years: "Години",
     weight: "Тегло (кг)",
     chart: "диаграма",
-    footer:"Цената на Храната © 2026",
-    developed:"разработено от Любен Киков - всички права запазени ;/",
-    reset:"изчисти"
+    footer: "Цената на Храната © 2026",
+    developed: "разработено от Любен Киков - всички права запазени ;/",
+    reset: "изчисти",
+
+    // table
+    group: "Група",
+    dailyCalories: "Дневни калории",
+    watts: "Ватове",
+    women: "Жени",
+    men: "Мъже",
+    children: "Деца (2–18)",
+    average: "Средно",
+    kcalWomen: "1600 – 2400 kcal",
+    kcalMen: "2200 – 3000+ kcal",
+    kcalChildren: "1000 – 3200 kcal",
+    kcalAverage: "2600 kcal",
+    wWomen: "77 – 116 W",
+    wMen: "106 – 145+ W",
+    wChildren: "48 – 155 W",
+    wAverage: "126 W",
+    flip: "виж още",
+    back: "обратно"
   }
 };
