@@ -1,7 +1,7 @@
 const LANG = {
   en: {
     app: "Food Cost",
-    welcome: "Welcome to the Food Cost",
+    welcome: "Welcome to the Food Cost2",
     tagline: "Quickly and easily calculate the actual amount you paid for food.",
     start: "Start",
     theBill: "The Bill:",
