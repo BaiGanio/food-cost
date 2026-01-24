@@ -49,7 +49,11 @@
   .app-navbar h1 {
     font-size: 1.8rem;
   }
-  .app-navbar .btn { padding: 0.3rem 0.5rem; font-size: 3.8rem; min-width: 50px; }
+  .app-navbar .btn { 
+    /* padding: 0.3rem 0.5rem;  */
+    font-size: 3.8rem; 
+    min-width: 50px; 
+  }
 }
 
 
