@@ -34,7 +34,7 @@
 /* Mobile adjustments */
 @media (max-width: 480px) {
   .app-navbar {
-    height: 54px;
+    height: 64px;
   }
 
   .app-navbar h1 {
@@ -46,7 +46,7 @@
   #langSwitcher,
   #themeSwitcher {
     
-    padding: 0.35rem 0.6rem;
+    padding: 0.55rem 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
