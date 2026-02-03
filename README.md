@@ -137,10 +137,29 @@ The output can be aggregated:
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing + 🧩 Issue Templates
 
 Contributions are welcome — from data sourcing to modeling, visualization, or documentation.  
 The goal is to build a transparent, community‑driven tool that anyone can use.
+
+To make contributing easier, we provide ready‑to‑use templates for common tasks:
+
+- 🐛 **Bug Report**  
+  Use this template to report problems or unexpected behavior.  
+  → [Open Bug Report](../../issues/new?template=bug_report.md)
+
+- ✨ **Feature Request**  
+  Suggest new ideas, improvements, or enhancements.  
+  → [Request a Feature](../../issues/new?template=feature_request.md)
+
+- 📊 **Dataset Suggestion**  
+  Propose new datasets for the model.  
+  → [Suggest a Dataset](../../issues/new?template=dataset_request.md)
+
+- 📚 **Documentation Update**  
+  Help improve or correct documentation.  
+  → [Update Documentation](../../issues/new?template=docs_update.md)
+
 
 ---
 
