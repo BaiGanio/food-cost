@@ -68,7 +68,7 @@
             <div class="flip-card-front card p-4" id="resultCard">
                 <h1 data-lang="theBill" class="mb-3" style="text-align: left;"></h1>
                 <p>1 kcal = 4184 J ≈ 0.0484259 W</p>
-              <table class="table-wrapper">
+              <table>
                 <thead>
                   <tr>
                     <th data-lang="group"></th>
@@ -99,14 +99,18 @@
                   </tr>
                 </tbody>
               </table>
-                <button data-lang="flip" class="flip-btn btn-sm btn-outline-primary" onclick="flipCard()"></button>
+              <div class="d-flex justify-content-end mt-3"> 
+                <button data-lang="flip" class="btn flip-btn btn-sm btn-outline-secondary" onclick="flipCard()"></button> 
+              </div>
+              <!-- <button data-lang="flip" class="flip-btn btn-sm btn-outline-primary" onclick="flipCard()"></button> -->
             </div>
             <!-- BACK --> 
             <div class="flip-card-back card p-4">
               <h2>Additional Info</h2>
               <p>You can place formulas, notes, or anything else here.</p> 
-              <button data-lang="back" class="flip-btn"
-                onclick="flipCard()"></button>
+              <div class="d-flex justify-content-end mt-3"> 
+                <button data-lang="back" class="btn flip-btn btn-sm btn-outline-primary" onclick="flipCard()"></button>
+              </div>
             </div>
           </div>
         </div>

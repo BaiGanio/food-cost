@@ -1,0 +1,43 @@
+{
+  "FAOSTAT": {
+    "baseApi": "https://fenixservices.fao.org/faostat/api/v1/en",
+    "baseBulk": "https://fenixservices.fao.org/faostat/api/v1/en/bulkdownloads",
+    "domains": {
+      "QCL": {
+        "name": "Crops and Livestock Production",
+        "description": "Production quantities, yields, and harvested area.",
+        "type": "production"
+      },
+      "FBS": {
+        "name": "Food Balance Sheets",
+        "description": "Food supply, kcal/person/day, protein, fat.",
+        "type": "consumption"
+      },
+      "FS": {
+        "name": "Food Losses",
+        "description": "Loss percentages by supply chain stage.",
+        "type": "waste"
+      },
+      "FP": {
+        "name": "Food Prices",
+        "description": "Global and regional food price indices.",
+        "type": "economics"
+      },
+      "GHG": {
+        "name": "Emissions - Agriculture",
+        "description": "Greenhouse gas emissions from agriculture.",
+        "type": "environment"
+      },
+      "RL": {
+        "name": "Resources and Land",
+        "description": "Land use, irrigation, fertilizer, water.",
+        "type": "resources"
+      },
+      "TCL": {
+        "name": "Trade - Crops and Livestock",
+        "description": "Import/export quantities and values.",
+        "type": "trade"
+      }
+    }
+  }
+}
