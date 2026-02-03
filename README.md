@@ -77,20 +77,6 @@ The architecture is designed so new data sources can be plugged in easily.
 
 ---
 
-## 🧩 Architecture (High‑Level)
-
-
-The system is modular, allowing contributors to add:
-
-- new datasets  
-- new calculators  
-- new visualizations  
-- new regional models  
-
-without breaking the core.
-
----
-
 ## 🧮 Core Calculations
 
 The model computes:
@@ -114,29 +100,6 @@ The output can be aggregated:
 
 ---
 
-## 🛣️ Roadmap
-
-### Phase 1 — Foundations
-- Define core formulas  
-- Integrate baseline datasets  
-- Build minimal calculation engine  
-
-### Phase 2 — Expansion
-- Add regional models  
-- Add waste & overproduction layers  
-- Add environmental metrics  
-
-### Phase 3 — Visualization
-- Charts, dashboards, and API endpoints  
-- Interactive “true cost per person” explorer  
-
-### Phase 4 — Insights
-- Comparative reports  
-- Policy simulations  
-- Optimization scenarios  
-
----
-
 ## 🤝 Contributing + 🧩 Issue Templates
 
 Contributions are welcome — from data sourcing to modeling, visualization, or documentation.  
@@ -146,7 +109,7 @@ To make contributing easier, we provide ready‑to‑use templates for common ta
 
 - 🐛 **Bug Report**  
   Use this template to report problems or unexpected behavior.  
-  → [Open Bug Report](../../issues/new?template=bug_report.md)
+  → [Open Bug Report](../../issues/new?template=BugReport.md)
 
 - ✨ **Feature Request**  
   Suggest new ideas, improvements, or enhancements.  
