@@ -113,16 +113,15 @@ To make contributing easier, we provide ready‑to‑use templates for common ta
 
 - ✨ **Feature Request**  
   Suggest new ideas, improvements, or enhancements.  
-  → [Request a Feature](../../issues/new?template=feature_request.md)
+  → [Request a Feature](../../issues/new?template=FeatureRequest.md)
 
 - 📊 **Dataset Suggestion**  
   Propose new datasets for the model.  
-  → [Suggest a Dataset](../../issues/new?template=dataset_request.md)
+  → [Suggest a Dataset](../../issues/new?template=DatasetRequest.md)
 
 - 📚 **Documentation Update**  
   Help improve or correct documentation.  
-  → [Update Documentation](../../issues/new?template=docs_update.md)
-
+  → [Update Documentation](../../issues/new?template=DocsUpdate.md)
 
 ---
 
@@ -130,3 +129,4 @@ To make contributing easier, we provide ready‑to‑use templates for common ta
 
 MIT License (or your preferred open‑source license).
 
+---
