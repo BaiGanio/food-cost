@@ -65,7 +65,7 @@ The result is a transparent, modular model that reveals the **true cost per pers
 
 The project relies on open datasets such as:
 
-- FAO (Food and Agriculture Organization of the UN)  
+- FAO (Food and Agriculture Organization of the UN) [(more)](https://github.com/BaiGanio/food-cost/wiki/What-FAO-Provides)
 - USDA (United States Department of Agriculture)  
 - Eurostat  
 - Our World in Data  
@@ -100,7 +100,7 @@ The output can be aggregated:
 
 ---
 
-## 🤝 Contributing + 🧩 Issue Templates
+## 🤝 Contributing
 
 Contributions are welcome — from data sourcing to modeling, visualization, or documentation.  
 The goal is to build a transparent, community‑driven tool that anyone can use.
