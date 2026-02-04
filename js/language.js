@@ -11,7 +11,9 @@ function applyLanguage(lang) {
 }
 
 function setLanguage(lang) {
-  CURRENT_LANG = lang; localStorage.setItem("lang", lang); applyLanguage(lang);;
+  CURRENT_LANG = lang; 
+  localStorage.setItem("lang", lang); 
+  applyLanguage(lang);;
 }
 
 function loadLanguage() {
